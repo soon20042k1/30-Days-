@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --primary-color:#f2726a  
+}
+body{
+
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family:Poppins;
+    background: linear-gradient(45deg, rgb(0, 133, 62), rgb(80, 200, 120));;
+}
+.card{
+    width: 300px;
+    height: 400px;
+    background-color: #242628;
+    color: white;
+   
+    text-align: center;
+    margin: 120px 26px;
+    border-radius: 20px;
+    overflow: hidden;
+   
+   
+}
+.card_img{
+    transform: translateY(25px);
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color) ;
+    transition: 0.6s;
+}
+.card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.card_img:hover{
+    border-radius:unset;
+    transform: unset;
+    width: 100%;
+    height: 100%;
+    border: unset;
+   
+}
+h2{
+   margin-top: 37px; 
+   margin-bottom: 10px;
+   font-size: 28px;
+    
+}
+p{
+    color: var(--primary-color);
+    margin-bottom: 25px;
+
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+    font-size: 22px;
+    color: white;
+    
+}
+.social i {
+    color: white;
+    padding: 10px 10px;
+}
+.social i:hover {
+    color: var(--primary-color);
+}
+button{
+    padding: 10px 30px;
+    border-radius: 6px;
+    color:white ;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--primary-color);
+    transition: 0.5s;
+}
