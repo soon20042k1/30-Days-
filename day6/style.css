@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #17a2b8;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.box{
+    margin: auto;
+}
+.alert{
+    padding: 15px 30px;
+    font-size: 40px;
+    color: #17a2b8;
+    border-radius: 10px;
+    border: none;
+}
+.result{
+    width: 225px;
+    height: 225px;
+    border: 6px solid white;
+    border-radius: 50%;
+    font-size: 70px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.detail{
+    display: flex;
+    margin-top: 60px;
+}
+.cardkey{
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+    width: 270px;
+    margin: 20px;
+
+}
+.cardkey p{
+    padding: 13px;
+    font-size: 20px;
+    color: black;
+}
+.cardkey p:first-child{
+    background-color:#78c0c9;
+    color: white;
+}
+
+.hide{
+    display: none;
+}
