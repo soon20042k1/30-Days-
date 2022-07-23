@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrap">
+    <h2>Have a nice day !</h2>
+    <h2>Create a todo ...</h2>
+    <form class="creatTodo">
+        <h3>What's son your todo?</h3>
+        <input type="text" 
+         placeholder="e.g.Get some milk"
+         id ="input_create"
+         name="input_create"
+        >
+        <h3>Pick a category ^^</h3>
+        <div class="option">
+        <label >
+            <input type="radio" name="category" class="input_priority" value="priority">
+            <span class="bubble priority"></span>
+            <div>Priority</div>
+        </label>
+        <label>
+            <input type="radio" name="category" class="input_normal" value="normal" >
+            <span class="bubble normal"></span>
+            <div>Normal</div>
+           
+        </label>
+        </div>
+      <input type="submit" value="ADD TODO">
+
+    </form>
+    <div class="todolist">
+        <h3>YOUR TODO LIST :</h3>
+        <div class="list"></div>
+    <!--    <div class="list">
+            <div class="todo_item">
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    <span class="bubble"></span>
+                </label>
+                <div class="todo_content">
+                      <input type="text" name="" id="" >
+               </div>
+                <div class="action">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+
+            </div>
+            <div class="todo_item">
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    <span class="bubble"></span>
+                </label>
+                <div class="todo_content">
+                      <input type="text" name="" id="" >
+               </div>
+                <div class="action">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+                
+            </div>
+        </div>
+        -->
+    </div>
+    <div class="delete_detail">
+        <button class="delete_com">Clear completed tasks</button>
+        <button class="delete_all">Delete all tasks</button>
+    </div>
+    
+    </div>
+ <script src="./app.js"></script>   
+</body>
+</html>
