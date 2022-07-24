@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ecf0f1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+}
+.control button{
+   border: none;
+   border-radius: 5px;
+   background-color:rgb(0, 128, 0) ;
+   padding: 10px 10px;
+   font-size: 20px;
+   color: white;
+   margin: 0 8px;
+
+}
+button.warning{
+    background-color:rgb(255, 165, 0) ;
+}
+button.error{
+    background-color: rgb(255, 0, 0);
+}
+.toasts{
+    position: fixed;
+    top: 15px;
+    right: 25px;
+
+}
+.toast{
+   
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    font-size: 16px;
+    padding: 18px 24px;
+    overflow: hidden;
+    position: relative;
+    animation: show_slide 1s linear forwards;
+}
+.toast i{
+    font-size: 28px;
+    margin-right: 18px
+}
+.toast.success{
+    background-color: rgb(0, 128, 0,0.4) ;
+    border-left: 6px solid rgb(0, 128, 0) ;
+}
+.toast.warning{
+    background-color:rgb(255, 165, 0,0.4) ;
+    border-left: 6px solid rgb(255, 165, 0) ;
+}
+.toast.error{
+    background-color:rgb(255, 0, 0,0.4) ;
+    border-left: 6px solid rgb(255, 0, 0) ;
+}
+.countdown{
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    animation: countdown1 4s linear forwards;  /*forwards : điểm dừng là điểm cuối của animation chứ ko cho vào nó lại chạy về điểm đầu */
+}
+.toast.success .countdown{
+    background-color: rgb(0, 128, 0) ;
+}
+.toast.warning .countdown{
+    background-color:rgb(255, 165, 0) ;
+}
+.toast.error .countdown{
+    background-color: rgb(255, 0, 0) ;
+}
+@keyframes countdown1{
+    20% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+@keyframes show_slide {
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(-8%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-6px);
+    }
+}
+@keyframes hide_slide {
+    0%{
+        transform: translateX(-10px);
+    }
+    40%{
+        transform: translateX(0%);
+    }
+    80%{
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(120%);
+    }
+}
+
+
